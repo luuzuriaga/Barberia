@@ -1,0 +1,291 @@
+/* Colores principales */
+:root {
+    --color-primario: #c78c19; /* Naranja */
+    --color-secundario: #888888; /* Gris */
+    --color-fondo: #FEFEFE; /* Blanco */
+    --color-texto: #333333; /* Negro */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: var(--color-primario);
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: --color-texto;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: var(--color-secundario);
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color:#c78c19;
+}
+
+.productos li:active{
+    border-color:#088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+    color:var(--color-texto)
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+footer{
+    text-align: center;
+    background: var(--color-primario);
+    padding:40px;
+}
+
+footer a {
+    color: var(--color-texto);
+  }
+  
+  footer a:hover {
+    color: var(--color-fondo); /* Cambiamos el color del texto al pasar el mouse a blanco */
+  }
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
+
+form{
+
+        margin: 40px auto; /* Esto agrega un margen en la parte superior e inferior y centra el formulario horizontalmente */
+        padding: 20px; /* Agrega un poco de espacio interno al formulario */
+        width: 50%; /* Puedes ajustar el ancho según tus preferencias */
+    }
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: orange;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px auto; /* Centrar la tabla horizontalmente */
+    width: 50%; /* Ajustar el ancho de la tabla según sea necesario */
+    border-collapse: collapse; /* Fusionar los bordes de las celdas */
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    text-align: center; /* Alinear el texto al centro en todas las celdas */
+}
+
+/*Aquí inicia el CSS para nuestra home*/
+.banner{
+    width: 100%;
+}
+
+.principal{
+    padding: 3em 0;
+    background: var(--color-fondo);
+    width: 940px;
+    margin: 0 auto; 
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear:left;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    color: var(--color-texto)
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.utensilios{
+    width: 120px;
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(--color-fondo,--color-secundario)
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+    color: var(--color-texto)
+}
+
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 5em 0;
+    background: #efefef;
+}
+
+.contenido-diferenciales{
+    width: 840px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 10%;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+
+
+}
+
+.items{
+    line-height: 1.5;
+    color: var(--color-texto)
+}
+
+.items:before{
+    content:"★"
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.imagen-diferenciales{
+    width: 40%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #a5a5a5;
+    
+}
+
+.imagen-diferenciales:hover{
+    opacity: 0.3;
+}
+
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+
+}
+
